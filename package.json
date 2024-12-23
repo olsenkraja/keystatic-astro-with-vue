@@ -1,5 +1,5 @@
 {
-  "name": "keystatic-astro-array-bug",
+  "name": "keystatic-astro-with-vue",
   "type": "module",
   "version": "0.0.1",
   "scripts": {
@@ -9,6 +9,18 @@
     "astro": "astro"
   },
   "dependencies": {
-    "astro": "^5.1.1"
+    "@astrojs/markdoc": "^0.12.4",
+    "@astrojs/mdx": "^4.0.3",
+    "@astrojs/node": "^9.0.0",
+    "@astrojs/react": "^4.1.2",
+    "@astrojs/vue": "^5.0.3",
+    "@keystatic/astro": "^5.0.3",
+    "@keystatic/core": "^0.5.42",
+    "@types/react": "^18.3.18",
+    "@types/react-dom": "^18.3.5",
+    "astro": "^5.1.1",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "vue": "^3.5.13"
   }
 }

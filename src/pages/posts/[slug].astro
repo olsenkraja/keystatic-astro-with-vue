@@ -1,0 +1,24 @@
+---
+import SlugPage from './../../components/pages/posts/[slug].vue';
+
+const { slug } = Astro.params;
+
+export function getStaticPaths() {
+    const files = import.meta.glob('../../content/**/*.{mdoc,mdx}', { eager: true })
+    let paths = []
+
+    Object.keys(files).map(file => {
+        let f = file.replace('../../content/', '')
+            .replace('.mdoc', '')
+            .replace('.mdx', '')
+            .split('/')
+        paths.push({params: {collection: f[0], slug: f[1]}})
+    })
+
+    // throw new Error(JSON.stringify(files))
+
+    return paths;
+}
+---
+
+<SlugPage slug={slug} />
