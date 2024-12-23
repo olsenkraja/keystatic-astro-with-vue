@@ -7,6 +7,7 @@ import mdx from '@astrojs/mdx';
 import node from '@astrojs/node';
 
 export default defineConfig({
+  site: 'https://olsenkraja.github.io',
   integrations: [react(), markdoc(), vue(), keystatic(), mdx()],
   output: 'static',
 
